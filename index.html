@@ -1,12 +1,164 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kelas Bu May</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Belajar Usaha dan Energi - Fisika Kelas X</title>
+<style>
+:root{--navy:#17324d;--blue:#2563eb;--sky:#eaf3ff;--green:#15803d;--gold:#f59e0b;--ink:#243447;--muted:#64748b;--paper:#fff;--line:#dbe5ef}
+*{box-sizing:border-box}body{margin:0;background:#f3f7fb;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+header{background:linear-gradient(120deg,#17324d,#2563eb);color:white;padding:42px 20px;text-align:center}
+header h1{font-size:clamp(1.8rem,4vw,2.7rem);margin:0 0 8px}header p{margin:0;opacity:.93}
+nav{position:sticky;top:0;background:white;padding:10px 14px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap;box-shadow:0 2px 10px #17324d18;z-index:5}
+nav a{color:var(--blue);text-decoration:none;font-weight:bold;padding:6px 10px;border-radius:8px}nav a:hover{background:var(--sky)}
+main{max-width:1000px;margin:25px auto;padding:0 16px}
+section,.panel{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:24px;margin:18px 0;box-shadow:0 5px 18px #17324d0b}
+h2{color:var(--navy);margin-top:0;border-bottom:2px solid var(--sky);padding-bottom:8px}
+h3{color:#24527a;margin-bottom:6px}.formula{background:#eef5ff;border-left:5px solid var(--blue);padding:13px 16px;border-radius:8px;font-size:1.12rem;font-weight:bold;overflow-wrap:anywhere}
+.note{background:#fff8e8;border-left:5px solid var(--gold);padding:12px 15px;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px}
+.tile{background:#f7faff;border:1px solid var(--line);border-radius:12px;padding:15px}
+table{border-collapse:collapse;width:100%;margin:12px 0}th,td{border:1px solid var(--line);padding:10px;text-align:left}th{background:var(--sky)}
+button{border:0;background:var(--blue);color:white;padding:11px 18px;border-radius:9px;font-weight:bold;cursor:pointer;margin:6px 4px 6px 0}button:hover{filter:brightness(.92)}button.secondary{background:#e7eef7;color:var(--navy)}button:disabled{opacity:.55;cursor:not-allowed}
+.question{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0}
+.question p{font-weight:bold;margin-top:0}.question label{display:block;padding:7px 9px;margin:5px 0;border-radius:7px;cursor:pointer}.question label:hover{background:#f0f6ff}
+.feedback{margin-top:9px;padding:9px 12px;border-radius:8px;display:none}.correct{background:#e9f8ee;color:#166534}.wrong{background:#fff0ef;color:#9f2922}
+#result{font-size:1.15rem;font-weight:bold;margin-top:14px}.small{color:var(--muted);font-size:.92rem}
+footer{text-align:center;color:var(--muted);padding:25px}
+@media(max-width:600px){section,.panel{padding:17px}table{font-size:.9rem}}
+</style>
 </head>
 <body>
-  <h1>Selamat datang!</h1>
-  <p>Website kelas Fisika.</p>
+<header>
+  <h1>Usaha dan Energi</h1>
+  <p>Materi pembelajaran interaktif Fisika Kelas X</p>
+</header>
+<nav>
+  <a href="#tujuan">Tujuan</a><a href="#usaha">Usaha</a><a href="#energi">Energi</a><a href="#kekekalan">Kekekalan Energi</a><a href="#contoh">Contoh Soal</a><a href="#kuis">Kuis</a>
+</nav>
+<main>
+<section id="tujuan">
+<h2>Tujuan Pembelajaran</h2>
+<p>Setelah mempelajari materi ini, peserta didik diharapkan mampu:</p>
+<ol>
+<li>Menjelaskan pengertian usaha dan energi dalam fisika.</li>
+<li>Mengidentifikasi faktor-faktor yang memengaruhi besar usaha.</li>
+<li>Membedakan energi kinetik dan energi potensial.</li>
+<li>Menggunakan persamaan usaha dan energi untuk menyelesaikan masalah sederhana.</li>
+<li>Menjelaskan hukum kekekalan energi mekanik dalam kehidupan sehari-hari.</li>
+</ol>
+</section>
+
+<section id="usaha">
+<h2>1. Usaha (W)</h2>
+<p>Dalam fisika, <b>usaha</b> adalah energi yang dipindahkan oleh gaya ketika gaya tersebut menyebabkan benda mengalami perpindahan. Usaha terjadi jika ada gaya dan perpindahan yang memiliki komponen searah.</p>
+<div class="formula">W = F × s × cos θ</div>
+<p>Keterangan:</p>
+<ul><li><b>W</b> = usaha (joule/J)</li><li><b>F</b> = gaya (newton/N)</li><li><b>s</b> = perpindahan (meter/m)</li><li><b>θ</b> = sudut antara arah gaya dan perpindahan</li></ul>
+<div class="grid">
+ <div class="tile"><h3>Gaya searah perpindahan</h3><p>θ = 0°, sehingga W = F × s. Usaha bernilai positif.</p></div>
+ <div class="tile"><h3>Gaya tegak lurus</h3><p>θ = 90°, sehingga W = 0. Gaya tidak melakukan usaha pada perpindahan tersebut.</p></div>
+ <div class="tile"><h3>Gaya berlawanan arah</h3><p>θ = 180°, sehingga usaha bernilai negatif.</p></div>
+</div>
+<div class="note"><b>Ingat:</b> Mendorong tembok yang tidak berpindah tidak menghasilkan usaha secara fisika pada tembok, meskipun tubuh terasa lelah.</div>
+</section>
+
+<section id="energi">
+<h2>2. Energi</h2>
+<p><b>Energi</b> adalah kemampuan untuk melakukan usaha. Satuan energi dalam SI adalah joule (J).</p>
+<h3>A. Energi Kinetik (E<sub>k</sub>)</h3>
+<p>Energi kinetik adalah energi yang dimiliki benda karena geraknya. Besarnya dipengaruhi oleh massa dan kecepatan benda.</p>
+<div class="formula">E<sub>k</sub> = ½ m v²</div>
+<p>m = massa (kg), v = kecepatan (m/s), dan E<sub>k</sub> = energi kinetik (J).</p>
+<h3>B. Energi Potensial Gravitasi (E<sub>p</sub>)</h3>
+<p>Energi potensial gravitasi adalah energi yang dimiliki benda karena posisi atau ketinggiannya terhadap titik acuan.</p>
+<div class="formula">E<sub>p</sub> = m g h</div>
+<p>m = massa (kg), g = percepatan gravitasi (umumnya 10 m/s² untuk soal sederhana), dan h = ketinggian (m).</p>
+<h3>C. Energi Mekanik (E<sub>m</sub>)</h3>
+<p>Energi mekanik merupakan jumlah energi kinetik dan energi potensial suatu benda.</p>
+<div class="formula">E<sub>m</sub> = E<sub>k</sub> + E<sub>p</sub></div>
+</section>
+
+<section id="kekekalan">
+<h2>3. Hukum Kekekalan Energi Mekanik</h2>
+<p>Jika hanya gaya konservatif (misalnya gaya gravitasi) yang melakukan usaha dan hambatan udara diabaikan, jumlah energi kinetik dan energi potensial tetap.</p>
+<div class="formula">E<sub>m awal</sub> = E<sub>m akhir</sub><br>E<sub>k1</sub> + E<sub>p1</sub> = E<sub>k2</sub> + E<sub>p2</sub></div>
+<p>Contoh: Saat bola jatuh, ketinggian dan energi potensialnya berkurang, sedangkan kecepatannya dan energi kinetiknya bertambah. Jumlah energi mekaniknya tetap jika hambatan udara diabaikan.</p>
+</section>
+
+<section id="contoh">
+<h2>4. Contoh Soal dan Pembahasan</h2>
+<h3>Contoh 1 — Usaha</h3>
+<p>Sebuah benda didorong dengan gaya 20 N searah perpindahan sejauh 5 m. Berapakah usaha yang dilakukan?</p>
+<p><b>Diketahui:</b> F = 20 N, s = 5 m, θ = 0°</p>
+<p><b>Penyelesaian:</b></p>
+<div class="formula">W = F × s × cos 0° = 20 × 5 × 1 = 100 J</div>
+<p>Jadi, usaha yang dilakukan adalah <b>100 joule</b>.</p>
+<h3>Contoh 2 — Energi Kinetik</h3>
+<p>Benda bermassa 2 kg bergerak dengan kecepatan 4 m/s. Tentukan energi kinetiknya.</p>
+<div class="formula">E<sub>k</sub> = ½ × 2 × 4² = 16 J</div>
+<p>Jadi, energi kinetiknya adalah <b>16 joule</b>.</p>
+<h3>Contoh 3 — Energi Potensial</h3>
+<p>Benda bermassa 3 kg berada pada ketinggian 5 m. Jika g = 10 m/s², tentukan energi potensialnya.</p>
+<div class="formula">E<sub>p</sub> = 3 × 10 × 5 = 150 J</div>
+<p>Jadi, energi potensialnya adalah <b>150 joule</b>.</p>
+</section>
+
+<section id="kuis">
+<h2>5. Kuis Interaktif</h2>
+<p>Jawablah 10 pertanyaan berikut. Pilih satu jawaban yang paling tepat untuk setiap soal, lalu tekan tombol <b>Periksa Jawaban</b>.</p>
+<div id="quiz"></div>
+<button id="checkBtn" onclick="checkAnswers()">Periksa Jawaban</button>
+<button class="secondary" onclick="resetQuiz()">Ulangi Kuis</button>
+<div id="result" aria-live="polite"></div>
+<p class="small">Skor dihitung otomatis. Pembahasan setiap soal akan muncul setelah jawaban diperiksa.</p>
+</section>
+</main>
+<footer>Media pembelajaran Fisika • Usaha dan Energi • Kelas X</footer>
+<script>
+const questions = [
+ {q:"Dalam fisika, usaha terjadi apabila ...",o:["Ada gaya dan benda mengalami perpindahan dengan komponen searah gaya","Ada gaya meskipun benda tidak berpindah","Benda memiliki massa","Benda mengalami perubahan suhu"],a:0,e:"Usaha terjadi ketika gaya menyebabkan perpindahan; yang diperhitungkan adalah komponen gaya searah perpindahan."},
+ {q:"Sebuah gaya 10 N mendorong benda searah perpindahan sejauh 3 m. Besar usaha adalah ...",o:["13 J","30 J","3,3 J","300 J"],a:1,e:"W = F × s = 10 × 3 = 30 J."},
+ {q:"Satuan usaha dan energi dalam SI adalah ...",o:["Watt","Newton","Joule","Meter"],a:2,e:"Usaha dan energi memiliki satuan SI joule (J)."},
+ {q:"Gaya 20 N bekerja tegak lurus terhadap perpindahan 4 m. Usaha oleh gaya tersebut adalah ...",o:["80 J","40 J","20 J","0 J"],a:3,e:"W = F × s × cos 90° = 0 J."},
+ {q:"Energi yang dimiliki benda karena gerakannya disebut ...",o:["Energi potensial","Energi kinetik","Energi kimia","Energi listrik"],a:1,e:"Energi kinetik merupakan energi yang dimiliki benda karena geraknya."},
+ {q:"Benda bermassa 2 kg bergerak dengan kecepatan 3 m/s. Energi kinetiknya adalah ...",o:["6 J","9 J","18 J","27 J"],a:1,e:"Ek = ½mv² = ½ × 2 × 3² = 9 J."},
+ {q:"Benda bermassa 2 kg berada pada ketinggian 4 m. Jika g = 10 m/s², energi potensialnya adalah ...",o:["8 J","20 J","40 J","80 J"],a:3,e:"Ep = mgh = 2 × 10 × 4 = 80 J."},
+ {q:"Energi mekanik merupakan jumlah dari ...",o:["Energi kinetik dan energi potensial","Gaya dan perpindahan","Massa dan kecepatan","Usaha dan daya"],a:0,e:"Energi mekanik adalah Em = Ek + Ep."},
+ {q:"Saat bola jatuh bebas tanpa hambatan udara, perubahan energi yang terjadi adalah ...",o:["Energi kinetik berkurang dan potensial bertambah","Energi kinetik dan potensial selalu tetap masing-masing","Energi potensial berkurang dan kinetik bertambah","Kedua energi berubah menjadi nol"],a:2,e:"Ketika bola jatuh, ketinggian berkurang sehingga Ep turun, sementara kecepatan meningkat sehingga Ek naik."},
+ {q:"Jika kecepatan benda menjadi 2 kali semula dan massanya tetap, energi kinetiknya menjadi ...",o:["2 kali semula","4 kali semula","½ kali semula","8 kali semula"],a:1,e:"Energi kinetik sebanding dengan kuadrat kecepatan. Jika v menjadi 2v, Ek menjadi 2² = 4 kali."}
+];
+const letters=["A","B","C","D"];
+const quiz=document.getElementById("quiz");
+function renderQuiz(){
+ quiz.innerHTML="";
+ questions.forEach((item,i)=>{
+  const box=document.createElement("div");box.className="question";box.id="q"+i;
+  const p=document.createElement("p");p.textContent=(i+1)+". "+item.q;box.appendChild(p);
+  item.o.forEach((option,j)=>{
+   const label=document.createElement("label");
+   const radio=document.createElement("input");radio.type="radio";radio.name="q"+i;radio.value=j;
+   label.appendChild(radio);label.append(" "+letters[j]+". "+option);box.appendChild(label);
+  });
+  const fb=document.createElement("div");fb.className="feedback";fb.id="fb"+i;box.appendChild(fb);quiz.appendChild(box);
+ });
+}
+function checkAnswers(){
+ let score=0,answered=0;
+ questions.forEach((item,i)=>{
+  const selected=document.querySelector('input[name="q'+i+'"]:checked');
+  const fb=document.getElementById("fb"+i);
+  fb.style.display="block";
+  if(selected){answered++;if(Number(selected.value)===item.a){score++;fb.className="feedback correct";fb.textContent="Tepat! "+item.e;}else{fb.className="feedback wrong";fb.textContent="Belum tepat. Jawaban yang benar: "+letters[item.a]+". "+item.o[item.a]+". "+item.e;}}
+  else{fb.className="feedback wrong";fb.textContent="Belum dijawab. Jawaban yang benar: "+letters[item.a]+". "+item.o[item.a]+". "+item.e;}
+ });
+ document.getElementById("result").textContent="Skor: "+score+" dari "+questions.length+" ("+(score*10)+"/100). Kamu menjawab "+answered+" dari "+questions.length+" soal.";
+ document.getElementById("checkBtn").disabled=true;
+}
+function resetQuiz(){
+ renderQuiz();document.getElementById("result").textContent="";document.getElementById("checkBtn").disabled=false;
+}
+renderQuiz();
+</script>
 </body>
 </html>
